@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+  <field key="author" value="Sophiemaheo & Facyla, based on Cash Costello integration" />
+  <field key="version" value="0.4.4" />
+  <field key="description" value="SimplePie Feed Integrator + RSS objects" />
+  <field key="website" value="http://id.facyla.net/" />
+  <field key="copyright" value="Sophiemaheo & Facyla" />
+  <field key="licence" value="GNU Lesser General Public License version 3" />
+  <field key="elgg_version" value="2009022701" />
+</plugin_manifest>
+
+<!--
+0.4.3 : 20111110
+  - modifs CSS
+  - widget settings change (checkbox => select)
+
+0.4.3 : 20110421
+  - correction divers petits bugs
+
+0.4.2 : 20110407
+  - s'appuie sur le switcher de layout d'externalblog, si activé
+
+0.4.1 : 20110328
+  - modifs diverses
+
+0.3 :
+  - first release with RSS objects
+
+//-->

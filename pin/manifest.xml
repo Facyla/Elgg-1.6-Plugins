@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+  <field key="author" value="Florian Daniel" />
+  <field key="version" value="0.5 - 2011.11.11" />
+  <field key="description" value="Pin : highlight objects (admin), memorize objects (users), remember first views per user and count public hits" />
+  <field key="website" value="http://id.facyla.net/" />
+  <field key="licence" value="GPL 2" />
+  <field key="copyright" value="Facyla 2011" />
+  <field key="elgg_version" value="2009022701" />
+</plugin_manifest>
+
+<!--
+0.5 : 2011.11.11
+  - CSS-ified icons
+  - AJAX-ified actions (the accessible way)
+
+0.4.3 : 2011.10.02
+  - improved rendering and icons
+  - integrates with tooltips, if used (jquery plugin)
+
+0.4.2 : 2011.10.02
+  - highlight + memorize displayed only when loggedin (not footprint - always needed for views counter)
+
+0.4.1 : 2011.09.05
+  - setting : use in full view only or also in shorter views ?
+
+0.4 : 2011.08.08
+  - multiple extends and associated settings (one for each tool)
+
+0.3 : 2011.08.06
+  - memorize content
+  - admin settings
+  - listing interface for all types of pins
+
+0.2 : 2011.08.06
+  - first functional version
+  - highlight content
+  - footprint + public view counter
+  - secure actions
+  - implement access rights
+
+0.1 : 2011.07.xx
+  - initial prototype of highlight functionnality
+
+//-->

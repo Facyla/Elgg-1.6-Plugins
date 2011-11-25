@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Facyla" />
+        <field key="version" value="0.3.1" />
+        <field key="description" value="Collection de widgets" />
+        <field key="website" value="http://id.facyla.net/" />
+        <field key="copyright" value="(CC) Facyla 2011" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>
+
+<!--
+0.3.1 : 20111103
+  - modification mineure titre des widgets (passe via un elgg_echo)
+
+0.3 : 20110925
+  - modification des widgets (générique) : titre, description (survol), lien, ouvert ou fermé par défaut
+
+0.2 : 20110830
+  - intégration de la vue widgets/wrapper permettant d'afficher le titre si ->widgettitle est précisé
+  - modification du titre des widgets (anytext seulement pour le moment)
+
+0.1.1 : 20110530
+  - amélioration des Profils en ligne
+  - intégration de plusieurs widgets tiers dans celui-ci
+  - configuration des widgets à activer ou non
+
+0.1 : 2009 - initial release
+
+//-->

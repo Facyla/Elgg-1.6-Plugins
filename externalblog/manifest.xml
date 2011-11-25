@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Florian Daniel" />
+        <field key="version" value="0.5.2 - 2011.09.20" />
+        <field key="description" value="External blog view - multisite only" />
+        <field key="website" value="http://id.facyla.net/" />
+        <field key="licence" value="CC-BY-NC 2.0 http://creativecommons.org/licenses/by-nc/2.0/" />
+        <field key="copyright" value="Facyla & Fing 2011" />
+        <field key="elgg_version" value="2009022701" />
+</plugin_manifest>
+
+<!--
+
+Notes d'installation :
+- lire README.txt
+- éviter d'activer customsearch en même temps que ce plugin (conflits sur la recherche)
+
+
+Historique des versions
+
+0.5.2 - 20110920
+  - correction bug recherche fulltext : pb lié au filtrage par tag (inutile car la liste sert elle-même de filtre)
+  - intégration de traduction tierces (anc. liées à customsearch)
+
+0.5.1 - 20110415
+  - ajout clearfloat après chaque article pour les images en "float"
+  - remplacement de la vue comments/forms/edit qui override celle de anonymous_comment par la nouvelle version (modif : +compact)
+
+0.5 - 20110415
+  - ajout vue RSS (et déplacement du listing dans externalblog/listing à cette fin)
+
+0.4.2 - 20110414
+  - débug filtrage par tag
+  - ajout tri inverse lorsqu'on filtre par tag (cf. code index.php pour détails)
+
+0.4.1 - 20110411
+  - ajout configuration : metatags du header peuvent être définis pour remplacer ceux par défaut (pour les flux RSS notamment)
+  - ajout de la vue page_elements/header pour pouvoir désactiver l'autofeed et supprimer les flux par défaut si le réglage "metatags" est utilisé
+
+0.4 - 20110407
+  - ajout d'une fonction pour faciliter la prise de charge des layouts (externalblog_layout_switch)
+
+0.3.4 - 20110320
+  * intégration recherche fulltext configurable :
+    - (défaut) ou extend : recherche locale d'abord, puis globale
+    - all : ajoute recherche locale sans filtrer
+    - localonly : recherche locale seulement
+  * page handler de recherche
+
+
+0.3.3 - 20110318
+  * filtrage par tag sur la page d'accueil
+  * pg/tag page_handler pour gérer les recherche, et ajout d'une vue modifiée de output/tags pour renvoyer sur ce filtrage (au lieu de la recherche globale)
+
+0.3.2 - 20110317
+  * Modifications rendu articles (date, nb commentaires)
+  * Coupure des articles via une balise html masquée (configurable en dur)
+
+0.3.1
+  * Ajout configuraiton de la page d'accueil (choix de l'URL)
+
+0.3
+  * Le layout choisi peut s'appliquer aussi aux articles de blog (décommenter la ligne register page handler pour activer ça)
+
+0.2.3
+  * Ajout test si anonymus_comments activés avant d'afficher le bloc déroulant des commentaires anonymes
+
+0.2
+
+
+0.1
+  * première version fonctionnelle
+
+//-->

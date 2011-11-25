@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Florian Daniel" />
+        <field key="version" value="0.5.2 - 2011.10.05" />
+        <field key="description" value="Improved notifications (subject, content, settings, HTML content) / Notifications améliorées : sujet, contenu, paramétrages, mail HTML" />
+        <field key="website" value="http://id.facyla.net/" />
+        <field key="licence" value="CC-BY-NC 2.0 http://creativecommons.org/licenses/by-nc/2.0/" />
+        <field key="copyright" value="Facyla 2011" />
+        <field key="elgg_version" value="2009022701" />
+</plugin_manifest>
+
+<!--
+IMPORTANT NOTES :
+- please apply 2 core patches if you don't want to risk accidental entities deletion on shared servers : http://trac.elgg.org/ticket/3710
+- better DO configure the global filter, as some existing subtypes may cause strange behaviours : messages (these are hard-coded excluded from notifications), but also plugins or widgets settings, and other various types of objects which are not human-readable content.
+
+TODO :
+- use cron, or anything that won't break an Elgg site on a shared server where set_limit is disabled
+- test more behaviour with "exotic" content
+
+
+0.5.2 - 2011.10.05
+  - changed autoclose function : if used, relies on formavia's plugin autoclose version
+  - other tag closing function is provided for other contexts..
+
+0.5.1 : 2011.09.15
+  - bookmark link + direct dowload file link (based on elgg's access rights, no direct bypass yet)
+
+0.5 : 2011.09.14
+  - don't notitfy 'messages' anymore (avoids multiple sendings when using no filter at all)
+  - more détailed debug title and message + system message (editing user notification report)
+  - bypass mail sending when there is no valid mail to be sent
+  - debug setting : override default debug mail (admin 2) by custom mails
+  - debug setting : set time threshold for debug mail
+  - one notification only for new forum subject (instead of creation + reply)
+  - corrected wiki edits
+  - comment filter (hard-coded : generic_comment only)
+
+0.4.2 : 2011.08.01
+  - add debug mode (admin) setting
+  - cleaner code and comments
+  - added closetag function (closes all open html tags in content excerpts)
+
+0.4.1 : 2011.08.01
+  - externalize remaining translations strings, wrappers and parameters
+
+0.4 : 2011.07.29
+  - avoids core patch (by using backtrace to detect used functions)
+  - updates notification is now OK
+  - integrates a diff tool library for displaying changes (not activated - see in start.php)
+
+0.3.7 : 2011.07.29 day
+  - prise en charge des updates, avec patch du core : engine/lib/entities.php : update_entities :
+    // Facyla : Double notification si on ne modifie pas - cf. trac http://trac.elgg.org/ticket/2364 and http://trac.elgg.org/ticket/3710
+    //if (trigger_elgg_event('update',$entity->type,$entity)) {
+		if (trigger_elgg_event('updating',$entity->type,$entity)) {
+
+0.3.6 : 2011.07.29 night
+  - changement de méthode de gestion des annotations
+  - notifications des commentaires OK
+  - BUG : update pas encore réglé (envoi du dernier contenu
+  - TODO : élément d'interface et de traduction à externaliser
+
+0.3.5 : 2011.06.21
+  - bug correction : "annotate" instead of "update" in start.php
+
+0.3.4 : 2011.06.14
+  - mails HTML envoyés (bug filtrage)
+  - fichier de langue revu pour envoi HTML
+
+0.3.3 : 2011.06.10
+  - mails HTML envoyés (mais contenu filtré)
+  - début d'optimisation des envois (beaucoup reste à faire - cron, etc.)
+
+0.3.2 : 2011.05.31
+  - correction bug sur les subtypes autorisés
+  - ajout de set_time_limit(5), qui définit, mais surtout réinitialise la durée maximale d'éxécution du script (secondes)
+
+0.3.1 : 2011.04.06
+  - modifs mineures du start.php (static->global et autres détails)
+
+0.3 : 2010.10.26
+  - très configurable mais ne tient pas la charge ..
+
+//-->

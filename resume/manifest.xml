@@ -1,0 +1,82 @@
+<?xml version="1.3" encoding="UTF-8"?>
+<plugin_manifest>
+  <field key="author" value="Facyla based on original work by Pablo Borbón @ Consultora Nivel7 Ltda." />
+  <field key="version" value="1.5" />
+  <field key="description" value="Gestion de CV en ligne : éducation, expériences pro, compétences, langues, etc. imprimable et exportable au format Europass"/>
+  <field key="website" value="http://www.formavia.fr/" />
+  <field key="copyright" value="(C) FormaVia 2011" />
+  <field key="licence" value="GNU Public License version 2" />
+  <field key="elgg_version" value="2010040201" />
+</plugin_manifest>
+
+<!--
+1.5 : 2011.11.11
+  - added /graphics
+  - added icon views
+  - river icons
+  - river language entries
+
+1.4.11 : 2011.10.14
+  - FormaVia integration ('formavia' plugin is not required)
+
+1.4.10 : 2011.10.10
+  - new view for chronogram
+  - integrates chronogram in resume homepage
+
+1.4.9 : 2011.09.16
+  - ajout widget
+  - param : wdget ou extension du profil (userdetails) - par défaut : widget
+
+1.4.8 :
+  - modification des appels des listings dans resume/resume (pas de mode fullview dans les pages autres qu'en pleine page)
+  - modification des titres selon le contexte (plus petits en mode compact)
+  - modification des liens +/-
+
+1.4.7 :
+  - adaptation : librairie protovis chargée manuellement dans les fichiers
+
+1.4.5 :
+  - regular link for printed version (no JS)
+
+1.4.4 : production alpha version
+  - enddates is now overrided by a new "ongoing" option (if ongoing : $enddate = time())
+  - implementation in dated entities + visualization
+
+1.4.3 : in-progress version for FormaVia
+  - added languages entries for item:object:(new types)
+
+1.4.2 : in-progress version for FormaVia
+  - XML Europass export :
+    * note : address fields are not structured - we use an unstructured contact field instead
+    * some missing fields : see in-files documentation (xml-europass views)
+
+1.4.1 : in-progress version for FormaVia
+  - better explanations on language form
+  - updated experience form
+  - minor changes
+
+1.4 : in-progress version for FormaVia
+  - integrates protovis chronogram visualization for users : uses education + workexperience + experience data
+
+1.3 : in-progress version for FormaVia
+  - full and compact views : education, language, workexperience
+  - better forms and rendering views : education, language, workexperience
+
+1.2 : in-progress version for FormaVia
+  => see readme.txt for change details
+  - admin settings : activate data types
+  - add CV types and corresponding actions+forms+views : experience, language, education, workexperience, skill, skill_ciiee
+  - lazy normalization to Europass format (contact items are not detailed + skills don't include driving licences yet and are structured differently - more granular)
+  - heavy plugin structure changes (new views, start.php changes...)
+  - no longer replace the userdetails view (extend it instead)
+  - collapsible boxes are collapsed by default
+
+1.1 : development version by Facyla for FormaVia
+  - backported to 1.6.1 (almost nothing to change)
+  - integrating Europass data structure
+  - experience and language objects
+  - @todo : workexperience, education and skill objects
+
+1.0 : original version by Pablo Borbón @ Consultora Nivel7 Ltda. http://www.nivel7.net
+
+//-->

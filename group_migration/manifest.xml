@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Facyla" />
+        <field key="version" value="1.2" />
+        <field key="description" value="Outil de migration des contenus et membres d'un groupe" />
+        <field key="website" value="http://id.facyla.net/" />
+        <field key="copyright" value="(CC) Facyla 2010" />
+        <field key="licence" value="GNU Public License version 2" />
+</plugin_manifest>
+
+<!--
+
+1.2 : 20111021
+  - changement de site_guid OK pour les groupe et les contenus (en SQL)
+
+1.1 : 20111012
+  - indication du site de provenance (pour la migration)
+  - modifs mineures en préparation du transfert des groupes entre sites.. (@todo)
+
+//-->

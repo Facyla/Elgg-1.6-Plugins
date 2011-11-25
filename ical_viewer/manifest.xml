@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Florian Daniel (id.facyla.net)" />
+	<field key="version" value="0.5" />
+	<field key="description" value="Visualisateur de calendrier au format iCal (.ics) - développement soutenu par la Fing, via le programme Citélabo" />
+	<field key="website" value="http://fing.org/" />
+	<field key="copyright" value="(cc) Facyla for Fing 2011" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2009031301" />
+</plugin_manifest>
+
+<!--
+0.5 : 20110429
+  - timezone offset now handled for GMT dates
+
+0.4.3 : 20110407
+  - better URL parsing
+  - improved date rendering (clean start & end dates)
+  - implements externalblog layout switcher (only if activated)
+
+0.4.2 : 20110401
+  - added graphics for ical icon
+  - microformatted read view
+
+0.4.1 :
+  - new informations in ical_viewer/read view
+
+0.4 :
+  - description included into ical_viewer/read view
+  - improved content parser (DQUOTE, line breaks)
+  - corrected localadmin settings edit rights (through specific action)
+
+0.3 :
+  - reusable views
+  - settings improvements
+
+0.2 :
+  - first public release
+  - admin settings
+  - public configurable view
+
+0.1 :
+  - functionnal plugin (mainly library integration)
+
+//-->

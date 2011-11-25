@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+  <field key="author" value="Facyla" />
+  <field key="version" value="0.2.1" />
+  <field key="description" value="Protovis (javascript library for data visualization)"/>
+  <field key="website" value="http://id.facyla.net/" />
+  <field key="copyright" value="(cc) Facyla" />
+  <field key="licence" value="GNU Public License version 2" />
+  <field key="elgg_version" value="2010040201" />
+</plugin_manifest>
+
+<!--
+TODO : this plugin is released as an existing facility for developpers and other plugins
+- ?? ideas welcomed ??
+
+
+0.2.1 : 2011.07.21
+  - protovis library isn't added to metatags anymore, but loaded once only when needed (manually)
+
+0.2 : 2011.05
+  - more tests of resume prototype (final version moved to 'resume' plugin)
+  - index page
+
+0.1 : 2010
+  - integration of protovis JS library
+  - network visualization tests : global network, user network, tests with groups, resume visualization prototype (static data)
+
+//-->

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+  <field key="author" value="Facyla" />
+  <field key="version" value="0.7.2" />
+  <field key="description" value="Static page, and reusable views editor (CMS tool for Elgg)" />
+  <field key="website" value="http://id.facyla.net/" />
+  <field key="copyright" value="(C) Facyla 2010" />
+  <field key="licence" value="GNU Public License version 2" />
+  <field key="elgg_version" value="2009030702" />
+</plugin_manifest>
+
+<!-- 
+======================
+INSTALLATION
+======================
+- Place in mod directory
+- Enable plugin
+- Go to admin pages
+- Check left menu entry and enjoy (inline help)
+
+======================
+Version History
+======================
+
+0.7.2 (2011.07.04):
+	- debug edit link for admins and editors + added on read view
+
+0.7.1 (2011.06.17):
+	- add edit link for admins and editors
+
+0.7 (2011.05.06):
+	- admin settings : additional editors without any special status can be authorized to edit cmspages (per-plugin edit rights)
+
+0.6.2 (2011.05.02):
+	- small bug in cmspages/view
+
+0.6.1 (2011.04.07):
+	- better support of externablog layout switcher
+
+0.6 (2011.03.29):
+	- cmspages are now searcheable
+	- listing view added (object view)
+	- url handler added
+
+0.5 (2011.03.17):
+	- addded parameter : use externalblog layout parameter instead of default layout
+
+0.4 (2011.02.14):
+	- merged feedback from Fing
+	- corrected edition bug when using private access level (edit action)
+	- corrected delete action
+	- modified menu view that didn't pass the GUID for deletion
+
+0.3 (2011.02.11):
+	- added 2 new views : cmspages/read (used by read.php), and cmspages/view, which can be used in themes just as any other view
+	- rewritten read.php to use read.php view
+	- typo fix in menu.php (line 50)
+
+0.2:
+	- integrated german language file from Tom http://community.elgg.org/pg/profile/Tombone
+	- added a missing translation key
+	- corrected minor css syntax bug in menu.php
+
+0.1:
+	- original version by Facyla
+-->
+
+
+

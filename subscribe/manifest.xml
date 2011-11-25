@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+  <field key="author" value="Facyla" />
+  <field key="version" value="1.2 - 20110921" />
+  <field key="description" value="Inline subscription to sites, groups and members, default group notification by email, and widgets (following and followers)" />
+  <field key="website" value="http://id.facyla.fr/" />
+  <field key="copyright" value="Based on Fabrice Collette's plugin, rewritten and updated by Facyla, 2011" />
+  <field key="licence" value="GNU Public License version 2" />
+  <field key="elgg_version" value="2009072201" />
+</plugin_manifest>
+
+<!--
+1.2 : 20110921
+  - implement site notification support in popups
+  - clean redirect url to avoid redirecting to a callback call (action)
+
+//-->
