@@ -5,6 +5,7 @@ $french = array(
   
   'cmspages:pagetype' => "Nom de la page (pour l'URL)",
   'cmspages:cmspage_url' => "URL de la page publiée :",
+  'cmspages:cmspage_view' => "Affichage de la vue :",
   'cmspages:pageselect' => "Choix de la page à éditer",
   
   'cmspages:new' => "OK",

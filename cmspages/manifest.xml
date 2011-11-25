@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin_manifest>
   <field key="author" value="Facyla" />
-  <field key="version" value="0.7.2" />
+  <field key="version" value="0.7.3" />
   <field key="description" value="Static page, and reusable views editor (CMS tool for Elgg)" />
   <field key="website" value="http://id.facyla.net/" />
   <field key="copyright" value="(C) Facyla 2010" />
@@ -21,6 +21,9 @@ INSTALLATION
 ======================
 Version History
 ======================
+
+0.7.3 (2011.09.25):
+	- typo bug + info for using page as a view
 
 0.7.2 (2011.07.04):
 	- debug edit link for admins and editors + added on read view

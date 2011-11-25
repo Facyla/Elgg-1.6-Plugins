@@ -32,8 +32,11 @@ else {
   } else { $access = (defined("ACCESS_DEFAULT")) ? ACCESS_DEFAULT : ACCESS_PUBLIC; }
 
   // Set the required form variables
-  $pagetype_input = '<label>' . elgg_echo('cmspages:pagetype') . ' <input type="text" value="'.$pagetype.'" disabled="disabled" style="width:300px;"</label>' . elgg_view('input/hidden', array('internalname' => 'pagetype', 'value' => $pagetype, 'disabled' => "disabled", 'js' => ' style="width:300px;"'));
-  if ($cmspage instanceof ElggObject) $cmspage_url = '<br />' . elgg_echo('cmspages:cmspage_url') . ' <a href="' . $vars['url'] . 'pg/cmspages/read/' . $pagetype . '" target="_new" >' . $vars['url'] . 'pg/cmspages/read/' . $pagetype . '</a>';
+  $pagetype_input = elgg_echo('cmspages:pagetype') . ' <input type="text" value="'.$pagetype.'" disabled="disabled" style="width:300px;"</label>' . elgg_view('input/hidden', array('internalname' => 'pagetype', 'value' => $pagetype, 'disabled' => "disabled", 'js' => ' style="width:300px;"'));
+  if ($cmspage instanceof ElggObject) {
+    $cmspage_url = '<br />' . elgg_echo('cmspages:cmspage_url') . ' <a href="' . $vars['url'] . 'pg/cmspages/read/' . $pagetype . '" target="_new" >' . $vars['url'] . 'pg/cmspages/read/' . $pagetype . '</a>';
+    $cmspage_view = elgg_echo('cmspages:cmspage_view') . ' elgg_view(\'cmspages/view\',array(\'pagetype\'=>"' . $pagetype . '"))';
+  }
   $title_input = elgg_echo('title') . " " . elgg_view('input/text', array('internalname' => 'cmspage_title', 'value' => $title, 'js' => ' style="width:500px;"'));
   $description_input = elgg_echo('description') . "<br/>" . elgg_view('input/longtext', array('internalname' => 'cmspage_content', 'value' => $description));
   $tag_input = elgg_echo('tags') . " " . elgg_view('input/tags', array('internalname' => 'cmspage_tags', 'value' => $tags, 'js' => ' style="width:500px;"'));
@@ -56,7 +59,7 @@ else {
 
   // Build the form
   $form_body = <<<EOT
-    <label>$pagetype_input</label>$cmspage_url<br /><br />
+    <label>$pagetype_input</label>$cmspage_url<br />$cmspage_view<br /><br />
     <label>$title_input</label><br /><br />
     <label>$description_input</label><div class="clearfloat"></div>
     <br />
