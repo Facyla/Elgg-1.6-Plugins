@@ -60,8 +60,17 @@ Ce plugin a été réalisé à l'initiative du programme Citélabo de la Fing's 
 ################################################################################################
 CONTENT_MAPPER
 
+Plugin "quick and dirty" développé pour transformer certains types de contenus "exotiques" en contenus plus standards. Utilisé sur Elgg.fr pour trasnformer les "ads" en articles de blog.
+Non-développeur s'abstenir : l'utilisation de ce plugin nécessite de travailler autant côté code que via le site..
+
+
 ################################################################################################
 EMBED
+
+Une version modifiée à partir de l'embed standard, mais qui permet de charger tous types de contenus : objets, users, groups.
+Plugin configurable et sélection des contenus embarquables.
+Intègre également un "modalpicker", version du friendpicker permettant de sélectionner tous types d'entités (et non seulement des ElggUser).
+
 
 ################################################################################################
 EXTERNALBLOG
@@ -104,6 +113,12 @@ Not e: The plugin was designed to display only blog posts from a selectable grou
 
  
 This plugin was funded by Citélabo Fing program, after an personal proof-of-concept.
+
+################################################################################################
+FOLDER
+
+Modified version of txtan's "folder" plugin : configurable object types can be added to folders (not only files).
+
 
 ################################################################################################
 GROUP_MIGRATION
