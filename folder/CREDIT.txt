@@ -1,0 +1,21 @@
+CREDIT
+--------
+1) This plugin is created as part of Geochronos (http://geochronos.org), a CANARIE (http://canarie.ca) and Cybera Inc (http://cybera.ca) funded Network Enabled Platform (NEP) project. 
+
+Help and Comments
+---------------------
+If you require help on setting up or has comments about the plugin, email txtan@cpsc.ucalgary.ca
+
+
+Modifications by Facyla - as of July, 13th. 2010
+---------------------------
+- translated into french
+- added new strings into language file (from hardcoded ones)
+- compatible with 1.6.1
+- added group tool option
+- some loops and selectors modifications
+
+v0.1.4
+- corrected jquery error when moving file (302 error breaking ajax)
+- multi-types support
+

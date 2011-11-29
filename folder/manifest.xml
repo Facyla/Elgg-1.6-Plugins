@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+        <field key="author" value="Tingxi Tan @ Grid Research Centre + Facyla" />
+        <field key="version" value="0.1.7" />
+        <field key="description" value="Folders extension for Elgg Files and other data types"/>
+        <field key="website" value="http://grc.ucalgary.ca" />
+        <field key="copyright" value="(C) Grid Research Centre 2010 + Facyla" />
+        <field key="licence" value="GNU Public License version 2" />
+        <field key="elgg_version" value="2009072201" />
+</plugin_manifest>
+
+<!--
+0.1.7 : 20111010
+  - integration avec layout des groupes revus
+  - workaround si module php PECL désactivé
+  - CSS pour le drag'n'drop
+
+//-->
